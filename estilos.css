@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    animation: fondo 2s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    width: 80vw;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+.titulo {
+    font-size: 20px;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: titulo 2s ease-in-out infinite;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.parrafo {
+    font-size: 14 px;
+    margin-bottom: 20px;
+    animation: parrafo 2s ease-in-out infinite;
+    text-align: justify;
+}
+.boton {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: boton 2s ease-in-out infinite;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+.boton:hover {
+    background-color: #ff99cc;
+}
+@keyframes fondo {
+    0% {
+        background-color: #f2f2f2;
+    }
+    50% {
+        background-color: #ffe6e6;
+    }
+    100% {
+        background-color: #f2f2f2 ;
+    }
+}
+@keyframes contenedor {
+    0% {
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes titulo {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes parrafo {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes boton {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        width: 90vw;
+        padding: 10px;
+    }
+    .titulo{
+        font-size: 18px;
+    }
+    .parrafo{
+        font-size: 12px;
+    }
+    .boton{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
